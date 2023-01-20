@@ -1,0 +1,32 @@
+Please refer to the video 'Explanation of the hacthon project' which contain everything to run the project.
+
+
+TO RUN THIS PROJECT YOU WILL NEED:
+
+1-----------------------
+Install yolov7 (look at Train_the_model.ipynb)
+to see the instruction.
+
+(optional) install coco strt checkpoints if you want to re train the model. Else the our trained weights are in file 'best.pt' 
+
+2--------------------
+include the folowing folder/file inside the yolov7 folder
+    1- s1
+    2- s2
+    3- anas
+    4- anas1
+    5- YOUR DATASET CHALLENGE. BUT PLEASE RENAME IT 'Challenge' and inside the folder remove space 'Scene 1' to 'Scene1' same thing with scene2
+    6- Our weight to predict the potholes 'best.pt'
+
+
+
+
+Files description.
+
+Train_the_model.ipynb :        is to train the model
+
+predict_Potholes_for_the_hackthon_data.ipynb:   is to detecting bounding box on the images of the challenge
+
+3D_reconstruction.ipynb :   is to make 3D reconstruction (you need gpu)
+
+potholes_size_and_depth_detecetion.ipynb :      is the main file to detect potholes depth and size.
