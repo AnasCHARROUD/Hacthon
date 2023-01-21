@@ -1,32 +1,20 @@
-Please refer to the video 'Explanation of the hacthon project' which contain everything to run the project.
+To run this project, you will need to follow these steps:
 
+Install YOLOv7 by following the instructions in the 'Train_the_model.ipynb' file.
+(Optional) You can also install COCO start checkpoints if you wish to retrain the model. If not, our trained weights are included in the file 'best.pt'
 
-# TO RUN THIS PROJECT YOU WILL NEED:
+Place the following folders and files inside the YOLOv7 folder (which are included in the repo):
+a. s1
+b. s2
+c. anas
+d. anas1
+e. Your dataset challenge, but please rename it to 'Challenge' and remove any spaces in the folder names (i.e. 'Scene 1' should be 'Scene1')
+f. Our weight file for predicting potholes 'best.pt'
 
-1-----------------------
-Install yolov7 (look at Train_the_model.ipynb)
-to see the instruction.
+The 'Train_the_model.ipynb' file is used for training the model.
+The 'predict_Potholes_for_the_hackthon_data.ipynb' file is used for detecting bounding boxes on the images of the challenge.
+The '3D_reconstruction.ipynb' file is used for creating 3D reconstructions (a GPU is required for this step).
+The 'potholes_size_and_depth_detection.ipynb' file is the main file for detecting the depth and size of the potholes.
 
-(optional) install coco strt checkpoints if you want to re train the model. Else the our trained weights are in file 'best.pt' 
-
-2--------------------
-include the folowing folder/file inside the yolov7 folder
-    1- s1
-    2- s2
-    3- anas
-    4- anas1
-    5- YOUR DATASET CHALLENGE. BUT PLEASE RENAME IT 'Challenge' and inside the folder remove space 'Scene 1' to 'Scene1' same thing with scene2
-    6- Our weight to predict the potholes 'best.pt'
-
-
-
-
-Files description.
-
-Train_the_model.ipynb :        is to train the model
-
-predict_Potholes_for_the_hackthon_data.ipynb:   is to detecting bounding box on the images of the challenge
-
-3D_reconstruction.ipynb :   is to make 3D reconstruction (you need gpu)
-
-potholes_size_and_depth_detecetion.ipynb :      is the main file to detect potholes depth and size.
+Please have a look to this video explainatory:
+https://drive.google.com/file/d/1SzoySncdsViiu0fdCUuuSU-q8Xr2HpFF/view?usp=sharing
